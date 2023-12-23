@@ -97,17 +97,18 @@
                 </form>
 
                 <?php
-                   
+                   $totalMoney = 0;
                     $countItem = 0;
                     if (isset($_SESSION['Username'])) {
-                       
+                        $sql = "SELECT SUM(Amount * Price) FROM carts, books WHERE carts.ISBN = books.ISBN AND Username = '" . $_SESSION['Username'] . "'";
+                        $totalMoney = Database::GetData($sql, ['row' => 0, 'cell' => 0]);
                         $sql = "SELECT count(*) FROM carts WHERE Username = '" . $_SESSION['Username'] . "'";
                         $countItem = Database::GetData($sql, ['row' => 0, 'cell' => 0]);
                     }
                 ?>
                 <div class="col-sm-3">
                     <div class="shopping-item">
-                        <a href="<?='/cart.php'?>">Giỏ hàng - <span class="cart-amunt"></span>
+                        <a href="<?='/cart.php'?>">Giỏ hàng - <span class="cart-amunt"><?=Helper::Currency($totalMoney)?></span>
                             <i class="fa fa-shopping-cart"></i>
                             <span class="product-count"><?=$countItem?></span>
                         </a>
