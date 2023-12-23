@@ -15,7 +15,7 @@
                         <li class="breadcrumb-item">
                             <a href="<?=ADMIN_URL?>/dasboard/"><i class="fas fa-home"></i></a>
                         </li>
-                        <li class="breadcrumb-item active">Bảng điều khiển</li>
+                        <li class="breadcrumb-item active">Bảng Điều Khiển</li>
                     </ol>
                 </div>
             </div>

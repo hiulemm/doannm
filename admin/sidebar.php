@@ -34,7 +34,7 @@
             <li class="nav-item">
                     <a href="<?=ADMIN_URL?>/dashboard/" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>Bảng điều khiển</p>
+                        <p>Bảng Điều Khiển</p>
                     </a>
                 </li>
                 <li class="nav-item">
