@@ -1,5 +1,5 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <a href="<?=ADMIN_URL?>/dasboard/" class="brand-link">
+    <a href="<?=ADMIN_URL?>/dashboard/" class="brand-link">
         <img src="/assets/img/bht_bookstore_logo.png" alt="BHT Bookstore" style="width: 100%">
     </a>
 
