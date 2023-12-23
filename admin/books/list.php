@@ -6,7 +6,7 @@
         $image_path = '';
         if (isset($_FILES['pic'])) {
             $image_size = $_FILES['pic']['size'];
-            $image_path = '/uploads/' . $_FILES['pic']['name'];
+            $image_path = '/assets/img/books/' . $_FILES['pic']['name'];
             move_uploaded_file($_FILES['pic']['tmp_name'], '../../' . $image_path);
         }
 
@@ -112,8 +112,7 @@
 
     <!-- Main content -->
     <section class="content">
-        <?php include '../alert.php'?>
-
+        <?php include '../alert.php'?>        
         <!-- Modal: Add -->
         <div class="modal fade" id="modal-add" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable" role="document" style="max-width: 800px">
@@ -130,6 +129,7 @@
                                 <label>ISBN</label>
                                 <input type="text" name="isbn" class="form-control">
                             </div>
+
                             <div class="col-md-6 form-group">
                                 <label>Tên sách</label>
                                 <input type="text" name="name" class="form-control">
