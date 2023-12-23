@@ -61,7 +61,12 @@
                         <p>Sách</p>
                     </a>
                 </li>
-           
+				<li class="nav-item">
+                    <a href="<?=ADMIN_URL?>/suppliers/list.php" class="nav-link">
+                        <i class="nav-icon fas fa-boxes"></i>
+                        <p>Nhà cung cấp</p>
+                    </a>
+                </li>
                
                 <li class="nav-item">
                     <a href="<?=ADMIN_URL?>/users/list.php" class="nav-link">
