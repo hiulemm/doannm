@@ -1,1 +1,1 @@
-<?php header('Location: books/list.php')?>
+<?php header('Location: dashboard/')?>
